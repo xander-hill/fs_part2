@@ -72,7 +72,8 @@ const App = () => {
           setNewName('')
           setNewNumber('')
           setMessageColor('red')
-          setMessage(error.response.data.error)
+          console.loge(error.response.data.error)
+          setMessage(`${error.response.data.error}`)
           setTimeout(() => {
             setMessage(null)
           }, 5000)
